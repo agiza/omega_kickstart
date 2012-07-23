@@ -1,0 +1,1 @@
+(function(e){Drupal.behaviors.activeBarClass={attach:function(t,n){var r=e("div#activebar-container").size();r&&e("body").addClass("activebar-container")}}})(jQuery);
