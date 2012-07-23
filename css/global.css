@@ -1001,21 +1001,19 @@ select[multiple] {
 * 4.2. Zone footer2
 **********************************************/
 .zone-footer2-wrapper {
-  background-color: #555555;
+  background-color: #cccccc;
   padding: 20px 0;
   min-height: 60px; }
 
 body.activebar-container .zone-footer2-wrapper {
   min-height: 100px; }
 
-.zone-footer2 {
-  color: #eeeeee; }
-
 /**
 * Powered by Drupal Commerce
 */
 .block-powered-drupal-commerce a {
   color: #1d76bc;
+  font-weight: 600;
   text-decoration: none; }
 
 /**
