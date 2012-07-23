@@ -95,17 +95,17 @@ button, input[type="reset"], input[type="submit"], input[type="button"] {
 * 1. Global
 * --
 **************************************************/
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
+
 
 body {
-  background: #ececec;
-  font-family: 'Open Sans', sans-serif;
+  background: $bodybg;
+  font-family: $headerfont;
   font-weight: 400;
   font-size: 14px;
   margin: 0 10px;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
   letter-spacing: 0;
 }
@@ -181,7 +181,7 @@ select[multiple] {
 * 2.1. Zone user
 **********************************************/
 .zone-user-wrapper {
-  background-color: #8e8e8e;
+  background-color: $topbarbackground;
   height: 34px;
   width: 100%;
 }
@@ -220,7 +220,6 @@ select[multiple] {
   right: 50%;
 }
 .block-menu-kickstart-user-menu .content ul li.first {
-  border-right: 1px solid #ffffff;
   padding-right: 7px;
 }
 .block-menu-kickstart-user-menu .content ul li.last {
@@ -228,25 +227,22 @@ select[multiple] {
 }
 .block-menu-kickstart-user-menu .content ul li a {
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
+  line-height: 25px;
   border-radius: 4px;
   color: #ffffff;
   padding: 5px 6px;
   text-decoration: none;
 }
 .block-menu-kickstart-user-menu ul li a.active {
-  background-color: #cecece;
   color: #717171;
   text-decoration: underline;
 }
 .block-menu-kickstart-user-menu ul li a.active:hover,
 .block-menu-kickstart-user-menu ul li a:hover {
-  background-color: #717171;
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 /*******************************************
 * 2.1.2. Region user second
@@ -281,7 +277,7 @@ select[multiple] {
 .block-shopping-cart-block .content .view-shopping-cart .view-empty {
   display: inline;
   float: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
 }
 .block-shopping-cart-block .content .view-shopping-cart .view-empty p {
@@ -314,7 +310,7 @@ select[multiple] {
 .block-shopping-cart-block .content .view-shopping-cart .line-item-summary .line-item-total {
   color: #888888;
   float: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 300;
   height: 100%;
   line-height: 30px;
@@ -324,11 +320,11 @@ select[multiple] {
   display: none;
 }
 .block-shopping-cart-block .content .view-shopping-cart .line-item-summary .links {
-  background-color: #2698F2;
-  color: #ffffff;
+  background-color: $cartceckoutbg;
+  color: $cartceckoutcolor;
   clear: none;
   float: right;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 300;
   height: 100%;
   line-height: 30px;
@@ -337,6 +333,7 @@ select[multiple] {
 }
 .block-shopping-cart-block .content .view-shopping-cart .line-item-summary .links a {
   color: #ffffff;
+  font-weight: 700;
 }
 .block-shopping-cart-block .content .view-shopping-cart .line-item-summary .links a:hover {
   text-decoration: underline;
@@ -371,7 +368,7 @@ select[multiple] {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
   height: 28px;
   padding: 5px 28px 5px 5px;
@@ -401,7 +398,7 @@ select[multiple] {
 */
 .navigation .primary-menu,
 .navigation .second-menu {
-  font-size: 1.142857142857143em;
+  font-size: 1em;
   margin: 0 auto;
 }
 .navigation .primary-menu .main-menu ul li,
@@ -415,68 +412,62 @@ select[multiple] {
 }
 .main-menu a,
 .secondary-menu a {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-family: $headerfont;
+  font-weight: 600;
   display: block;
   margin: 7px 0;
   padding: 12px 16px;
   text-decoration: none;
 }
 .navigation li a {
-  -webkit-transition:background .2s ease-in;
-  -moz-transition:background .2s ease-in;
-  -o-transition:background .2s ease-in;
-  transition:background .2s ease-in
+  
 }
 .navigation li a:hover {
-  -webkit-transition:background .4s ease-out;
-  -moz-transition:background .4s ease-out;
-  -o-transition:background .4s ease-out;
-  transition:background .4s ease-out;
+  
 }
 /* Main menu */
 .main-menu a {
-  color: #ffffff;
+  color: $mainmenulinkcolor;
   text-transform: capitalize;
 }
 .navigation .primary-menu li a {
-  background-color: #000000;
-  border: 1px solid #d7d7d7;
+  background-color: $mainmenuitembg;
+  border: $mainmenuitemborder;
   min-height: 50px;
 }
 .navigation .primary-menu li a.active,
 .navigation .primary-menu li a:hover {
-  background-color: #ffffff;
-  border: 1px solid #d7d7d7;
+  background-color: $mainmenuitembghover;
+  border: $mainmenuitemborderhover;
 }
 .navigation .primary-menu li a.active {
-  color: #2698F2;
+  color: $mainmenuitemfontactive;
 }
 .navigation .primary-menu li a:hover {
-  color: #000000;
+  color: $mainmenuitemfonthover;
 }
 /* Secondary menu */
 .navigation .second-menu {
   clear: left;
 }
 .secondary-menu a {
-  color: #000000;
+  color: $secondarymenulinkcolor;
   padding: 12px 18px;
 }
 .navigation .second-menu li a {
-  background-color: #ffffff;
-  border: 1px solid #d7d7d7;
+  background-color: $secondarymenuitembg;
+  border: $secondarymenuitemborder;
 }
 .navigation .second-menu li a.active,
 .navigation .second-menu li a:hover {
-  background-color: #000000;
-  border: 1px solid #d7d7d7;
+  background-color: $secondarymenuitembghover;
+  border: $secondarymenuitemborderhover;
 }
 .navigation .second-menu li a.active {
-  color: #2698F2;
+  color: $secondarymenuitemfontactive;
 }
 .navigation .second-menu li a:hover {
-  color: #ffffff;
+  color: $secondarymenuitemfonthover;
 }
 /**************************************************
 * --
@@ -520,7 +511,7 @@ select[multiple] {
   padding-top: 1px;
 }
 #region-breadcrumb .pseudo-breadcrumb-total-results {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
   margin: 0 0 0 10px;
 }
@@ -586,7 +577,7 @@ select[multiple] {
   margin: 0;
 }
 .region-sidebar-first .block-facetapi h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -594,7 +585,7 @@ select[multiple] {
 }
 .region-sidebar-first .block-facetapi a {
   color: #8e8e8e;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
   text-decoration: none;
 }
@@ -664,13 +655,13 @@ select[multiple] {
   z-index: 100;
 }
 #promotional_banner .promotional_banner_saving {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 900;
   font-size: 28px;
   padding: 0px 22px 0 12px;
 }
 #promotional_banner span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
   font-size: 16px;
   line-height: 38px;
@@ -682,7 +673,7 @@ select[multiple] {
   -moz-border-radius: 4px;
   border-radius: 4px;
   color: #2698F2;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
 
   padding: 5px 28px;
@@ -754,13 +745,13 @@ select[multiple] {
   margin-top: 2px;
 }
 #shipping #shipping_message {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
 }
 #shipping #shipping_message span,
 #shipping #shipping_message span em,
 #shipping #shipping_currency {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
 }
 /**
@@ -844,8 +835,8 @@ select[multiple] {
 .view-display-id-block_2 .views-row .views-field-field-image,
 .view-display-id-block_2 .views-row .views-field-field-tagline,
 .block-blog-block .views-field-title {
-  display: inline;
-  margin-top: 5px;
+  display: block;
+  margin-top: 0;
 }
 .view-display-id-block_1 .views-row .views-field-field-tagline,
 .view-display-id-block_2 .views-row .views-field-field-tagline,
@@ -854,7 +845,7 @@ select[multiple] {
 .view-display-id-block_2 .views-row .views-field-field-tagline a,
 .block-blog-block .views-field-title a {
   color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -868,6 +859,7 @@ select[multiple] {
   height: 90px;
   line-height: 18px;
   padding: 0px;
+  border: 4px solid #ffffff;
 }
 .view-display-id-block_1 .views-row .views-field-field-tagline a,
 .view-display-id-block_2 .views-row .views-field-field-tagline a,
@@ -899,7 +891,7 @@ select[multiple] {
   background: none;
   background-color: #262626;
   color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
   font-size: 16px;
   height: 50px;
@@ -957,7 +949,7 @@ select[multiple] {
 .section-footer ul.menu .expanded span,
 .section-footer ul.menu li a {
   color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 600;
   text-decoration: none;
 }
@@ -974,7 +966,7 @@ select[multiple] {
 }
 .section-footer ul.menu .expanded ul.menu li a {
   color: #c1c1c1;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
   font-weight: normal;
 }
@@ -984,7 +976,7 @@ select[multiple] {
 .block-social h2 {
   background-color: #262626;
   color: #eeeeee;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
   line-height: 16px;
   padding: 8px 15px;
@@ -994,7 +986,7 @@ select[multiple] {
 }
 .block-social .content #social li {
   color: #eeeeee;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
   line-height: 15px;
   margin-top: 2px;
@@ -1015,7 +1007,7 @@ select[multiple] {
 .block-social .content li a,
 .block-social .content li span {
   color: #eeeeee;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
   display: block;
   height: 35px;
@@ -1131,11 +1123,11 @@ ul#payments li:first-child {
 .view-collection-taxonomy-term .products-per-collection li .field-type-commerce-price,
 .page-products .view-display-products li .field-type-commerce-price {
   color: #858787;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
 }
 .page-products .view-display-products li .content .commerce-product-field-commerce-price {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
 }
 .view-collection-taxonomy-term .products-per-collection li.views-row.last,
@@ -1166,7 +1158,7 @@ ul#payments li:first-child {
 }
 .view-collection-taxonomy-term .view-header h2 a {
   color: #ffffff;
-  ffont-family: 'Open Sans', sans-serif;
+  ffont-family: $headerfont;
   font-weight: 700;
   text-decoration: none;
   text-shadow: 0 1px 1px #C3C3C3;
@@ -1213,7 +1205,7 @@ ul#payments li:first-child {
   -moz-border-radius: 8px;
   border-radius: 8px;
   color: #000000;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
   font-size: 16px;
   padding: 5px 15px;
@@ -1493,13 +1485,13 @@ div.messages.commerce-kickstart-add-to-cart {
 }
 .node-product-type .product-title {
   clear: both;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
   font-size: 24px;
 }
 .node-product-type .commerce-product-sku {
   color: #b1b1b1;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
   font-size: 13px;
 }
@@ -1508,13 +1500,13 @@ div.messages.commerce-kickstart-add-to-cart {
 }
 .node-product-type .commerce-product-field {
   color: #54A8E5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 20px;
 }
 .node-product-type .field-name-body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 20px;
@@ -1523,7 +1515,7 @@ div.messages.commerce-kickstart-add-to-cart {
 .node-product-type .field-name-body .read-less,
 .node-product-type .field-name-body .read-more a,
 .node-product-type .field-name-body .read-less a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-size: 14px;
   font-weight: 400;
 }
@@ -1576,7 +1568,7 @@ div.messages.commerce-kickstart-add-to-cart {
 /* Product details */
 .commerce-add-to-cart label {
   float: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 600;
   margin-right: 5px;
   width: 45%;
@@ -1595,7 +1587,7 @@ div.messages.commerce-kickstart-add-to-cart {
   -moz-border-radius: 8px;
   border-radius: 8px;
   color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 400;
   font-size: 17px;
   font-weight: normal;
@@ -1719,7 +1711,7 @@ div.messages.commerce-kickstart-add-to-cart {
   -moz-border-radius: 8px;
   border-radius: 8px;
   color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 600;
   font-size: 15px;
   font-weight: normal;
@@ -2460,7 +2452,7 @@ html.js #commerce-backoffice-message-form fieldset .fieldset-legend {
 }
 #commerce-backoffice-message-form .fieldset-legend a {
   color: #2698F2;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $headerfont;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;

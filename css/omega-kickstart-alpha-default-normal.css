@@ -1,9 +1,6 @@
-/* This file will hold styles that are loaded using the same media query as the normal grid. */
-/* If you are using the default media queries provided by Omega, these styles will also
- *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
-/* This file will hold styles that are loaded using the same media query as the normal grid. */
-/* If you are using the default media queries provided by Omega, these styles will also
- *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
+/* Include Default Variables & Mixins */
+/* End Variables & Mixins */
 /**************************************************
 * --
 * 2. Section header
@@ -83,29 +80,45 @@
 .view-display-id-block_3 .bx-next {
   height: 80px;
   text-align: center;
-  width: 320px; }
+  width: 32%;
+  margin-right: 2%; }
 
 .event-slider .views-field-nothing {
-  background: url("../images/bg_title_slideshow_current.png") left top no-repeat;
   color: #ffffff;
+  background: #888;
+  border: 1px solid #CCC;
   padding-bottom: 5px;
   position: absolute;
   bottom: -100px;
-  left: 32.5%; }
+  left: 34%; }
 
 .view-display-id-block_3 .bx-prev,
 .view-display-id-block_3 .bx-next {
   color: #000000;
+  background: #EEE;
+  border: 1px solid #CCC;
   text-decoration: none;
   display: block;
   margin-top: 15px;
   padding-bottom: 5px; }
 
+.view-display-id-block_3 .bx-prev:hover,
+.view-display-id-block_3 .bx-next:hover {
+  background: #FFF; }
+
+.view-display-id-block_3 .bx-prev {
+  margin-left: 0;
+  float: left; }
+
+.view-display-id-block_3 .bx-next {
+  margin-right: 0;
+  float: right; }
+
 .event-slider .views-field-nothing span,
 .view-display-id-block_3 .bx-prev span.control,
 .view-display-id-block_3 .bx-next span.control {
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 21px;
   height: 80px;
@@ -116,21 +129,12 @@
 .event-slider .views-field-nothing em,
 .view-display-id-block_3 .bx-prev span.control em,
 .view-display-id-block_3 .bx-next span.control em {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 32px;
   text-decoration: none;
   text-transform: uppercase; }
-
-.view-display-id-block_3 .bx-prev {
-  background: url("../images/bg_title_slideshow_previous.png") left top no-repeat;
-  float: left; }
-
-.view-display-id-block_3 .bx-next {
-  background: url("../images/bg_title_slideshow_next.png") left top no-repeat;
-  float: right;
-  margin-right: 5px; }
 
 /**********************************************
 * 3.3. Zone postscript
@@ -157,7 +161,7 @@
 .block-social h2 {
   background: url("../images/bg_block_footer_title.png") left top no-repeat;
   color: #eeeeee;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   line-height: inherit;
   padding: 0 0 22px 25px; }
