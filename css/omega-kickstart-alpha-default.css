@@ -1,4 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
+@import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
 /* Include Default Variables & Mixins */
 /* End Variables & Mixins */
 /*------------------------------------------------
@@ -58,34 +59,71 @@ body {
 * 2.1.2. Region user second
 *******************************************/
 #region-user-second {
-  background-color: transparent;
-  margin-left: 10px; }
-
-.region-user-second .region-user-second-inner {
-  margin-right: -10px; }
+  background-color: transparent; }
 
 #block-views-shopping-cart-block {
-  float: right;
   margin: 0; }
+
+#block-views-shopping-cart-block .content .view-shopping-cart .view-empty p {
+  padding-right: 25px;
+  display: block; }
+
+#region-branding .logo-img {
+  text-align: left;
+  float: left; }
+
+#block-views-exp-display-products-page {
+  float: right;
+  padding-top: 10px;
+  margin-bottom: 10px; }
+
+#block-views-exp-display-products-page .views-exposed-widgets {
+  position: relative;
+  width: 300px;
+  float: none;
+  margin-right: 10px;
+  margin-bottom: 0; }
 
 /**********************************************
 * 2.3. Zone menu
 **********************************************/
-/**
-* Navigation
-*/
+.navigation {
+  background: transparent;
+  padding-bottom: 0;
+  display: block !important;
+  margin: 20px 0; }
+
+.navigation .primary-menu h2,
+.navigation .second-menu h2 {
+  display: none; }
+
+.menu-toggle {
+  display: none; }
+
+.navigation .primary-menu {
+  float: left;
+  margin-right: 12px;
+  margin-left: 0; }
+
+.navigation .second-menu {
+  clear: inherit;
+  float: right;
+  margin-right: 0; }
+
 .navigation .primary-menu ul,
 .navigation .second-menu ul {
   float: left;
-  margin: 26px 0px;
-  width: 100%; }
+  margin: 0;
+  width: 100%;
+  display: block; }
 
 .navigation .primary-menu .main-menu ul li,
 .navigation .second-menu .secondary-menu ul li,
 .navigation .primary-menu .main-menu li,
 .navigation .second-menu .secondary-menu li {
   float: inherit;
-  width: auto; }
+  width: auto;
+  font-size: 0.8em; }
 
 .main-menu a,
 .secondary-menu a {
@@ -104,23 +142,23 @@ body {
 .navigation li.first a,
 .navigation li.first a.active,
 .navigation li.first a:hover {
-  border-left: 1px solid #d7d7d7; }
+  border-left: 1px solid #cccccc; }
 
 .navigation li.last a,
 .navigation li.last a.active,
 .navigation li.last a:hover {
-  border-right: 1px solid #d7d7d7; }
+  border-right: 1px solid #cccccc; }
 
 /* Secondary menu */
 .navigation .second-menu li.first a,
 .navigation .second-menu li.first a.active,
 .navigation .second-menu li.first a:hover {
-  border-left: 1px solid #d7d7d7; }
+  border-left: 1px solid #cccccc; }
 
 .navigation .second-menu li.last a,
 .navigation .second-menu li.last a.active,
 .navigation .second-menu li.last a:hover {
-  border-right: 1px solid #d7d7d7; }
+  border-right: 1px solid #cccccc; }
 
 /**************************************************
 * --
@@ -144,16 +182,6 @@ body {
 * Blocks
 */
 /* HP blocks: Top advert */
-.block-promotional-banner {
-  background-color: #999999;
-  color: white;
-  font-size: 16px;
-  padding: 5px 10px;
-  position: relative;
-  top: 0px;
-  left: -10px;
-  width: 100%; }
-
 #promotional_banner .promotional_banner_saving {
   font-family: "Open Sans", sans-serif;
   font-weight: 900;

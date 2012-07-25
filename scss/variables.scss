@@ -1,8 +1,13 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
+@import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700);
 
 $bodybg: #FFF;
 $headerfont: 'Open Sans', sans-serif;
+$altheaderfont: 'Gentium Basic', serif;
 
+// mobile specific elements
+$mobilemenubg: #444;
+$tabletmenubg: transparent;
 // User Zone
 $topbarbackground: #888;
 // shopping cart block (in user zone)

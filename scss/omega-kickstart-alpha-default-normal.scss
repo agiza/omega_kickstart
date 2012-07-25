@@ -22,13 +22,15 @@
 /**********************************************
 * 2.4. Zone header
 **********************************************/
-.navigation .primary-menu {
-  float: left;
-  margin-right: 12px;
-}
-.navigation .second-menu {
-  clear: inherit;
-  float: right;
+
+/**
+* Navigation
+*/
+.navigation .primary-menu .main-menu ul li,
+.navigation .second-menu .secondary-menu ul li,
+.navigation .primary-menu .main-menu li,
+.navigation .second-menu .secondary-menu li {
+  font-size: 1em;
 }
 /**************************************************
 * --
@@ -39,10 +41,9 @@
 * 3.2. Zone content
 **********************************************/
 /* HP blocks: Top advert */
-#promotional_banner .promotional_banner_special_offer {
-  float: right;
-  line-height: 22px;
-  margin-top: 4px;
+
+#promotional_banner .promotional_banner_saving {
+  display: inline;
 }
 /* HP blocks: Slideshow */
 .view-display-id-block_3 .bx-window {
