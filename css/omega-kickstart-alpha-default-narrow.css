@@ -23,16 +23,10 @@
   overflow: inherit;
   position: inherit; }
 
-.block-menu-kickstart-user-menu .content ul,
-.block-menu-kickstart-user-menu .content ul li,
-.block-menu-kickstart-user-menu .content ul li a {
-  display: inline; }
-
 .block-menu-kickstart-user-menu .content ul {
   text-align: right;
   clear: inherit;
   float: right;
-  margin-top: 2px;
   margin-right: 10px;
   position: inherit;
   left: inherit;
@@ -40,7 +34,6 @@
 
 .block-menu-kickstart-user-menu .content ul li {
   float: left;
-  padding-bottom: 3px;
   position: inherit;
   right: inherit; }
 
