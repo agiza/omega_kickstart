@@ -700,9 +700,9 @@ select[multiple] {
   background-color: #999999;
   color: white;
   font-size: 16px;
-  padding: 5px 10px;
+  padding: 5px 10px 20px 10px;
   position: relative;
-  top: 0px; }
+  top: 0; }
 
 #promotional_banner .promotional_banner_saving {
   font-family: "Open Sans", sans-serif;
@@ -721,37 +721,90 @@ select[multiple] {
   text-transform: uppercase; }
 
 #promotional_banner .promotional_banner_special_offer {
-  color: #FFF;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #888888;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: white;
   font-family: "Open Sans", sans-serif;
+  border: 1px solid #cccccc;
   font-weight: 700;
-  line-height: 38px;
-  float: right;
-  display: block;
-  padding: 0;
+  padding: 5px 28px;
   text-transform: capitalize; }
 
 /* HP blocks: Slideshow */
 .block-demo-content-block-3 {
-  position: relative;
-  top: -10px; }
+  position: relative; }
 
 .bx-wrapper,
 .bx-wrapper .bx-window {
-  max-height: 168px;
   padding-bottom: 0;
-  width: 100% !important; }
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+  overflow: visible !important;
+  /**
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    contenteditable attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that are clearfixed.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  /**
+   * For IE 6/7 only
+   * Include this rule to trigger hasLayout and contain floats.
+   */
+  *zoom: 1; }
+  .bx-wrapper:before, .bx-wrapper cf:after,
+  .bx-wrapper .bx-window:before,
+  .bx-wrapper .bx-window cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  .bx-wrapper:after,
+  .bx-wrapper .bx-window:after {
+    clear: both; }
 
 .bx-wrapper ul {
   width: 100%;
-  min-width: 344px;
-  max-width: 344px; }
+  max-width: 100%; }
 
 .view-display-id-block_3 .item-list .event-slider li {
   margin: 0 auto;
-  width: 100%;
-  min-height: 168px; }
+  max-width: 100%;
+  /**
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    contenteditable attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that are clearfixed.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  /**
+   * For IE 6/7 only
+   * Include this rule to trigger hasLayout and contain floats.
+   */
+  *zoom: 1; }
+  .view-display-id-block_3 .item-list .event-slider li:before, .view-display-id-block_3 .item-list .event-slider li cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  .view-display-id-block_3 .item-list .event-slider li:after {
+    clear: both; }
+
+.view-display-id-block_3 .item-list .event-slider li a {
+  display: block; }
 
 .view-display-id-block_3 .item-list .event-slider li img {
+  width: 100%;
   max-width: 100%;
   height: auto; }
 

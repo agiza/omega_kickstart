@@ -742,9 +742,9 @@ select[multiple] {
   background-color: $promobannerbg;
   color: $promobannercolor;
   font-size: 16px;
-  padding: 5px 10px;
+  padding: 5px 10px 20px 10px;
   position: relative;
-  top: 0px;
+  top: 0;
   
 }
 #promotional_banner .promotional_banner_saving {
@@ -764,41 +764,51 @@ select[multiple] {
   text-transform: uppercase;
 }
 #promotional_banner .promotional_banner_special_offer {
-  color: #FFF;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: $promobannerbuttonbg;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: $promobannerbuttoncolor;
   font-family: $headerfont;
+  border: $promobannerbuttonborder;
   font-weight: 700;
-  line-height: 38px;
-  float: right;
-  display: block;
-  padding: 0;
+  padding: 5px 28px;
   text-transform: capitalize;
 }
 /* HP blocks: Slideshow */
 .block-demo-content-block-3 {
   position: relative;
-  top: -10px;
 }
 .bx-wrapper,
 .bx-wrapper .bx-window {
-  max-height: 168px;
   padding-bottom: 0;
   width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+  overflow: visible !important;
+  @include clearfix();
 }
+
 .bx-wrapper ul {
   //max-height: 165px;
   width: 100%;
-  //@include clearfix;
-  min-width: 344px;
-  max-width: 344px;
+  max-width: 100%;
+  //height: auto;
 }
 .view-display-id-block_3 .item-list .event-slider li {
   margin: 0 auto;
-  //height: 168px;
-  //width: 344px;
-  width: 100%;
-  min-height: 168px;
+  max-width: 100%;
+  @include clearfix();
+}
+.view-display-id-block_3 .item-list .event-slider li a {
+  display: block;
 }
 .view-display-id-block_3 .item-list .event-slider li img {
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -813,6 +823,7 @@ select[multiple] {
 }
 /* HP blocks: Side advert */
 .block-shipping-discount {
+
 }
 #shipping {
   border: 6px solid #ffffff;

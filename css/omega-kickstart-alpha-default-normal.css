@@ -39,7 +39,8 @@
 **********************************************/
 /* HP blocks: Top advert */
 #promotional_banner .promotional_banner_saving {
-  display: inline; }
+  display: inline;
+  padding: 0px 22px 0 12px; }
 
 /* HP blocks: Slideshow */
 .view-display-id-block_3 .bx-window {
