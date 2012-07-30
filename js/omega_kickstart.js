@@ -34,7 +34,7 @@
       //console.log('woot!');
       
       $(window).resize(function(){
-        liheight = $('ul.event-slider li:first-child').height();
+        var liheight = $('ul.event-slider li:first-child').height();
         $('.bx-wrapper, .bx-wrapper .bx-window').css('height', liheight);
       });
       
