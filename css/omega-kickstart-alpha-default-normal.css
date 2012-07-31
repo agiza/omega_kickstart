@@ -48,119 +48,98 @@
 #promotional_banner .promotional_banner_special_offer {
   top: 15px; }
 
-/* HP blocks: Slideshow */
-.view-display-id-block_3 .bx-window {
-  overflow: visible !important; }
+#block-views-demo-content-slideshow-block-1 {
+  /* HP blocks: Slideshow */ }
+  #block-views-demo-content-slideshow-block-1 .bx-window {
+    overflow: visible !important; }
+  #block-views-demo-content-slideshow-block-1 .bx-wrapper,
+  #block-views-demo-content-slideshow-block-1 .bx-wrapper .bx-window {
+    height: 580px !important;
+    max-height: 580px;
+    min-width: 940px; }
+  #block-views-demo-content-slideshow-block-1 .event-slider .views-field-nothing,
+  #block-views-demo-content-slideshow-block-1 .event-slider .views-field-nothing em,
+  #block-views-demo-content-slideshow-block-1 .bx-prev,
+  #block-views-demo-content-slideshow-block-1 .bx-prev em,
+  #block-views-demo-content-slideshow-block-1 .bx-next,
+  #block-views-demo-content-slideshow-block-1 .bx-next em {
+    display: block;
+    text-indent: 0; }
+  #block-views-demo-content-slideshow-block-1 .bx-prev,
+  #block-views-demo-content-slideshow-block-1 .bx-next {
+    position: absolute;
+    bottom: 0; }
+  #block-views-demo-content-slideshow-block-1 .bx-next {
+    right: 0; }
+  #block-views-demo-content-slideshow-block-1 .item-list .event-slider li {
+    height: 480px;
+    width: 940px; }
+  #block-views-demo-content-slideshow-block-1 .event-slider .views-field-nothing,
+  #block-views-demo-content-slideshow-block-1 .bx-prev,
+  #block-views-demo-content-slideshow-block-1 .bx-next {
+    height: 80px;
+    text-align: center;
+    width: 32%;
+    margin-right: 2%; }
+  #block-views-demo-content-slideshow-block-1 .event-slider .views-field-nothing {
+    color: #ffffff;
+    background: #888;
+    border: 1px solid #CCC;
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: -100px;
+    left: 34%; }
+  #block-views-demo-content-slideshow-block-1 .bx-prev,
+  #block-views-demo-content-slideshow-block-1 .bx-next {
+    color: #000000;
+    background: #EEE;
+    border: 1px solid #CCC;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    padding-bottom: 5px; }
+  #block-views-demo-content-slideshow-block-1 .bx-prev:hover,
+  #block-views-demo-content-slideshow-block-1 .bx-next:hover {
+    background: #FFF; }
+  #block-views-demo-content-slideshow-block-1 .bx-prev {
+    margin-left: 0;
+    float: left; }
+  #block-views-demo-content-slideshow-block-1 .bx-next {
+    margin-right: 0;
+    float: right; }
+  #block-views-demo-content-slideshow-block-1 .event-slider .views-field-nothing span,
+  #block-views-demo-content-slideshow-block-1 .bx-prev span.control,
+  #block-views-demo-content-slideshow-block-1 .bx-next span.control {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    height: 80px;
+    line-height: 28px;
+    padding: 10px 25px 0;
+    overflow: hidden; }
+  #block-views-demo-content-slideshow-block-1 .event-slider .views-field-nothing em,
+  #block-views-demo-content-slideshow-block-1 .bx-prev span.control em,
+  #block-views-demo-content-slideshow-block-1 .bx-next span.control em {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 32px;
+    text-decoration: none;
+    text-transform: uppercase; }
 
-.bx-wrapper,
-.bx-wrapper .bx-window {
-  height: 580px !important;
-  max-height: 580px;
-  min-width: 940px; }
-
-.event-slider .views-field-nothing,
-.event-slider .views-field-nothing em,
-.view-display-id-block_3 .bx-prev,
-.view-display-id-block_3 .bx-prev em,
-.view-display-id-block_3 .bx-next,
-.view-display-id-block_3 .bx-next em {
-  display: block;
-  text-indent: 0; }
-
-.view-display-id-block_3 .bx-prev,
-.view-display-id-block_3 .bx-next {
-  position: absolute;
-  bottom: 0; }
-
-.view-display-id-block_3 .bx-next {
-  right: 0; }
-
-.view-display-id-block_3 .bx-window {
-  overflow: visible !important; }
-
-.view-display-id-block_3 .item-list .event-slider li {
-  height: 480px;
-  width: 940px; }
-
-.event-slider .views-field-nothing,
-.view-display-id-block_3 .bx-prev,
-.view-display-id-block_3 .bx-next {
-  height: 80px;
-  text-align: center;
-  width: 32%;
-  margin-right: 2%; }
-
-.event-slider .views-field-nothing {
-  color: #ffffff;
-  background: #888;
-  border: 1px solid #CCC;
-  padding-bottom: 5px;
-  position: absolute;
-  bottom: -100px;
-  left: 34%; }
-
-.view-display-id-block_3 .bx-prev,
-.view-display-id-block_3 .bx-next {
-  color: #000000;
-  background: #EEE;
-  border: 1px solid #CCC;
-  text-decoration: none;
-  display: block;
-  margin-top: 15px;
-  padding-bottom: 5px; }
-
-.view-display-id-block_3 .bx-prev:hover,
-.view-display-id-block_3 .bx-next:hover {
-  background: #FFF; }
-
-.view-display-id-block_3 .bx-prev {
-  margin-left: 0;
-  float: left; }
-
-.view-display-id-block_3 .bx-next {
-  margin-right: 0;
-  float: right; }
-
-.event-slider .views-field-nothing span,
-.view-display-id-block_3 .bx-prev span.control,
-.view-display-id-block_3 .bx-next span.control {
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 21px;
-  height: 80px;
-  line-height: 28px;
-  padding: 10px 25px 0;
-  overflow: hidden; }
-
-.event-slider .views-field-nothing em,
-.view-display-id-block_3 .bx-prev span.control em,
-.view-display-id-block_3 .bx-next span.control em {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 32px;
-  text-decoration: none;
-  text-transform: uppercase; }
-
-.block-shipping-discount {
+#block-commerce-kickstart-content-shipping-discount {
   bottom: 110px; }
 
 /**********************************************
 * 3.3. Zone postscript
 **********************************************/
-.view-display-id-block_1 .views-row,
-.view-display-id-block_2 .views-row,
-.block-blog-block .block-inner {
+#zone-postscript .views-row {
   margin: 0; }
-
-.block-blog-block .block-title {
-  background-position: -18px 0;
-  padding-left: 25px;
-  text-align: left;
-  width: 112px;
-  height: 50px;
-  font-size: 16px; }
+#zone-postscript .views-row .views-field-field-tagline .field-content,
+#zone-postscript .block-blog-block .views-field-title .field-content {
+  font-size: 18px;
+  line-height: 26px; }
 
 /**************************************************
 * --

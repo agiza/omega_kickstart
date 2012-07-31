@@ -63,24 +63,23 @@
 /*******************************************
 * 3.2.2. Content
 *******************************************/
-/* HP blocks: Slideshow */
-.bx-wrapper,
-.bx-wrapper .bx-window {
-  height: 357px !important;
-  max-height: 357px;
-  padding-bottom: 0; }
-
-.bx-wrapper ul {
-  max-height: 357px; }
-
-.view-display-id-block_3 .item-list .event-slider li {
-  min-height: 168px;
-  height: 357px;
-  max-height: 480px;
-  margin: 0;
-  width: 700px;
-  min-width: 330px;
-  max-width: 940px; }
+#block-views-demo-content-slideshow-block-1 {
+  /* HP blocks: Slideshow */ }
+  #block-views-demo-content-slideshow-block-1 .bx-wrapper,
+  #block-views-demo-content-slideshow-block-1 .bx-wrapper .bx-window {
+    height: 357px !important;
+    max-height: 357px;
+    padding-bottom: 0; }
+  #block-views-demo-content-slideshow-block-1 .bx-wrapper ul {
+    max-height: 357px; }
+  #block-views-demo-content-slideshow-block-1 .item-list .event-slider li {
+    min-height: 168px;
+    height: 357px;
+    max-height: 480px;
+    margin: 0;
+    width: 700px;
+    min-width: 330px;
+    max-width: 940px; }
 
 #promotional_banner .promotional_banner_special_offer {
   float: right;
@@ -90,9 +89,8 @@
 /**********************************************
 * 3.3. Zone postscript
 **********************************************/
-.view-display-id-block_1 .views-row .views-field-field-tagline,
-.view-display-id-block_2 .views-row .views-field-field-tagline,
-.block-blog-block .views-field-title {
+#zone-postscript .views-row .views-field-field-tagline,
+#zone-postscript .block-blog-block .views-field-title {
   left: 10px; }
 
 /**************************************************
